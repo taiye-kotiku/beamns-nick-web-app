@@ -5,7 +5,7 @@ WORKDIR /app
 # Copy entire repo first so package.json is guaranteed to exist
 COPY . .
 
-# Install dependencies (lockfile optional)
+# Install dependencies (works with or without lockfile)
 RUN if [ -f package-lock.json ]; then \
       npm ci --omit=dev; \
     else \
