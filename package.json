@@ -1,12 +1,14 @@
 {
-  "name": "evict-my-tenant-alabama-fly",
-  "version": "1.0.0",
+  "name": "evict-my-tenant-al",
   "private": true,
-  "type": "module",
   "scripts": {
-    "start": "node src/index.js"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start -p 3000"
   },
   "dependencies": {
-    "express": "^4.19.2"
+    "next": "14.0.4",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
   }
 }
