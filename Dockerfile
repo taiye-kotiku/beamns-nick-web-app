@@ -2,9 +2,6 @@ FROM node:18-alpine
 
 WORKDIR /app
 
-# Copy only what actually exists
-COPY package.json ./
-
 # Install deps (no lockfile required)
 RUN npm install --omit=dev
 
