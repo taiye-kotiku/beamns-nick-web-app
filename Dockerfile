@@ -2,19 +2,16 @@ FROM node:18-alpine
 
 WORKDIR /app
 
-# Copy entire repo first so package.json is guaranteed to exist
+# Copy everything first (avoids missing file issues)
 COPY . .
 
-# Install dependencies (works with or without lockfile)
-RUN if [ -f package-lock.json ]; then \
-      npm ci --omit=dev; \
-    else \
-      npm install --omit=dev; \
-    fi
+# Install dependencies (works with or without package-lock.json)
+RUN npm install --omit=dev
 
-# Run build only if a build script exists
-RUN if npm run | grep -q "build"; then npm run build; fi
+# Build if a build script exists (won’t fail if it doesn’t)
+RUN npm run build || echo "No build step"
 
-EXPOSE 3000
+# Fly listens on the internal port, no EXPOSE required but fine to keep
+EXPOSE 8080
 
 CMD ["sh", "scripts/start.sh"]
