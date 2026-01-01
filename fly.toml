@@ -2,7 +2,7 @@ app = "evict-my-tenant-alabama-fly"
 primary_region = "iad"
 
 [http_service]
-  internal_port = 3000
+  process.env.PORT || 8080
   force_https = true
   auto_stop_machines = true
   auto_start_machines = true
