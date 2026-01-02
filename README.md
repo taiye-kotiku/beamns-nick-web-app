@@ -1,16 +1,8 @@
-# Evict My Tenant Alabama — Fly.io Deployment
+# Evict My Tenant – Alabama
 
-## Deploy
-fly auth login
-fly deploy
+Next.js 14 app deployed on Fly.io.
 
-## Add custom domain
-fly domains add evictmytenantal.com
-fly certs add evictmytenantal.com
-
-## Required secrets
-fly secrets set DATABASE_URL=...
-fly secrets set STRIPE_SECRET_KEY=...
-fly secrets set STRIPE_WEBHOOK_SECRET=...
-fly secrets set RESEND_API_KEY=...
-fly secrets set SESSION_SECRET=...
+## Local dev
+```bash
+npm install
+npm run dev
