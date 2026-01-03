@@ -1,8 +1,10 @@
-# Evict My Tenant – Alabama
+# Evict My Tenant
 
-Next.js 14 app deployed on Fly.io.
+Next.js app deployed on Fly.io.
 
-## Local dev
-```bash
+## Local Dev
 npm install
 npm run dev
+
+## Deploy
+fly deploy
