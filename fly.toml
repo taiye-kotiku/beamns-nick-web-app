@@ -12,4 +12,3 @@ primary_region = "iad"
   cpu_kind = "shared"
   cpus = 1
   memory = "1gb"
-
