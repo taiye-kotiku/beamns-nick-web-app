@@ -1,18 +1,18 @@
-import './globals.css'
+import './globals.css';
 
 export const metadata = {
-  title: 'Evict My Tenant – Alabama',
-  description: 'Tenant eviction guidance for Alabama'
-}
+  title: 'Evict My Tenant',
+  description: 'Tenant eviction workflow',
+};
 
 export default function RootLayout({
-  children
+  children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en">
       <body>{children}</body>
     </html>
-  )
+  );
 }
