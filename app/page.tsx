@@ -1,35 +1,39 @@
 export default function Home() {
   return (
-    <main style={{ padding: '2rem', maxWidth: 720, margin: '0 auto' }}>
-      <h1>Evict My Tenant</h1>
+    <main style={{ maxWidth: 960, margin: "0 auto", padding: "4rem 1rem" }}>
+      <h1 style={{ fontSize: "2.5rem", marginBottom: "1rem" }}>
+        Evict My Tenant – Alabama
+      </h1>
 
-      <p>
-        Start your eviction workflow by selecting your state and entering tenant details.
+      <p style={{ fontSize: "1.1rem", marginBottom: "2rem" }}>
+        Generate Alabama‑compliant eviction notices in minutes.
       </p>
 
-      <form style={{ marginTop: '2rem', display: 'grid', gap: '1rem' }}>
-        <label>
-          State
-          <select required>
-            <option value="">Select a state</option>
-            <option value="AL">Alabama</option>
-          </select>
-        </label>
+      <div style={{
+        padding: "2rem",
+        background: "white",
+        borderRadius: 12,
+        boxShadow: "0 10px 25px rgba(0,0,0,0.05)"
+      }}>
+        <h2>Start an Eviction</h2>
+        <ul>
+          <li>✔ Non‑payment of rent</li>
+          <li>✔ Lease violations</li>
+          <li>✔ Notice to Quit</li>
+        </ul>
 
-        <label>
-          Tenant Name
-          <input type="text" placeholder="John Doe" required />
-        </label>
-
-        <label>
-          Property Address
-          <input type="text" placeholder="123 Main St" required />
-        </label>
-
-        <button type="submit">
-          Start Eviction
+        <button style={{
+          marginTop: "1.5rem",
+          padding: "0.75rem 1.25rem",
+          background: "#2563eb",
+          color: "white",
+          border: "none",
+          borderRadius: 8,
+          fontSize: "1rem"
+        }}>
+          Begin
         </button>
-      </form>
+      </div>
     </main>
   );
 }
