@@ -1,8 +1,8 @@
-import './globals.css'
+import "./globals.css";
 
 export const metadata = {
-  title: 'Evict My Tenant',
-  description: 'Tenant eviction workflow',
+  title: "Evict My Tenant – Alabama",
+  description: "Fast eviction document generation for Alabama landlords",
 };
 
 export default function RootLayout({
