@@ -1,10 +1,9 @@
-# Evict My Tenant – Alabama
+# Evict My Tenant
 
-Next.js + Fly.io deployment for Alabama eviction document generation.
-
-## Run locally
-npm install
-npm run dev
+Next.js 14 + Fly.io eviction workflow app.
 
 ## Deploy
+
+```bash
+fly launch
 fly deploy
