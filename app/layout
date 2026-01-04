@@ -1,0 +1,27 @@
+import "./globals.css";
+
+export const metadata = {
+  title: "Evict My Tenant",
+  description: "Simple eviction workflow for landlords"
+};
+
+export default function RootLayout({
+  children
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <html lang="en">
+      <body>
+        <header className="header">
+          <h1>Evict My Tenant</h1>
+          <nav>
+            <a href="/">Home</a>
+            <a href="/dashboard">Dashboard</a>
+          </nav>
+        </header>
+        <main className="container">{children}</main>
+      </body>
+    </html>
+  );
+}
