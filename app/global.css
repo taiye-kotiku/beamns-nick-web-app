@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: #f7f7f7;
+  color: #111;
+}
+
+.header {
+  background: #111;
+  color: white;
+  padding: 16px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header a {
+  color: white;
+  margin-left: 16px;
+  text-decoration: none;
+}
+
+.container {
+  padding: 32px;
+}
+
+.card {
+  background: white;
+  border-radius: 8px;
+  padding: 24px;
+  max-width: 600px;
+}
