@@ -1,30 +1,22 @@
+import Link from "next/link";
+
 export default function DashboardPage() {
   return (
-    <div className="card">
-      <h2>Eviction Dashboard</h2>
+    <main className="max-w-5xl mx-auto p-6">
+      <h1 className="text-2xl font-bold mb-4">Eviction Dashboard</h1>
 
-      <form>
-        <label>
-          Tenant Name
-          <input type="text" placeholder="John Doe" />
-        </label>
+      <div className="bg-white rounded-lg shadow p-6">
+        <p className="mb-4 text-gray-700">
+          Start a new eviction filing or continue an existing case.
+        </p>
 
-        <label>
-          Property Address
-          <input type="text" placeholder="123 Main St, Birmingham AL" />
-        </label>
-
-        <label>
-          Reason for Eviction
-          <select>
-            <option>Non‑payment of rent</option>
-            <option>Lease violation</option>
-            <option>Holdover tenant</option>
-          </select>
-        </label>
-
-        <button type="submit">Generate Notice</button>
-      </form>
-    </div>
+        <Link
+          href="/evictions/new"
+          className="inline-block bg-black text-white px-4 py-2 rounded"
+        >
+          Start New Eviction
+        </Link>
+      </div>
+    </main>
   );
 }
