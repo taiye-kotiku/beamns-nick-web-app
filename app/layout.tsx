@@ -1,19 +1,11 @@
-// app/layout.tsx
-import "./globals.css";
-
-export const metadata = {
-  title: "Evict My Tenant",
-  description: "Eviction filing system",
-};
-
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode;
+  children: React.ReactNode
 }) {
   return (
     <html lang="en">
       <body>{children}</body>
     </html>
-  );
+  )
 }
