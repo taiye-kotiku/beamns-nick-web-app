@@ -1,0 +1,23 @@
+/* [project]/Documents/Beamns Nick/evict-my-tenant-alabama/app/globals.css [app-client] (css) */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, sans-serif;
+}
+
+a {
+  color: inherit;
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+}
+
+/*# sourceMappingURL=Documents_Beamns%20Nick_evict-my-tenant-alabama_app_globals_5e51e582.css.map*/

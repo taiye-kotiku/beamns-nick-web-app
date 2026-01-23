@@ -1,28 +1,26 @@
-"use client";
+'use client';
 
-import { useRouter } from "next/navigation";
+import { useEffect } from 'react';
+import { useRouter } from 'next/navigation';
+import { clearCurrentCase } from '@/app/lib/storage';
 
 export default function NewEvictionPage() {
   const router = useRouter();
 
-  const startEviction = () => {
-    // TEMP: static ID until backend exists
-    const evictionId = "demo-eviction-123";
-    router.push(`/evictions/${evictionId}/tenant`);
-  };
+  useEffect(() => {
+    // Clear any existing draft and start fresh
+    clearCurrentCase();
+    router.push('/evictions/new/property');
+  }, [router]);
 
   return (
-    <main className="max-w-3xl mx-auto p-6">
-      <h1 className="text-xl font-semibold mb-4">
-        Start an Eviction Filing
-      </h1>
-
-      <button
-        onClick={startEviction}
-        className="bg-black text-white px-4 py-2 rounded"
-      >
-        Begin
-      </button>
-    </main>
+    <div style={{
+      minHeight: '100vh',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+    }}>
+      <p>Starting new eviction filing...</p>
+    </div>
   );
 }

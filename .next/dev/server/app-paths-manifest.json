@@ -1,0 +1,13 @@
+{
+  "/evictions/[id]/documents/page": "app/evictions/[id]/documents/page.js",
+  "/evictions/new/landlord/page": "app/evictions/new/landlord/page.js",
+  "/evictions/new/lease/page": "app/evictions/new/lease/page.js",
+  "/evictions/new/notice/page": "app/evictions/new/notice/page.js",
+  "/evictions/new/page": "app/evictions/new/page.js",
+  "/evictions/new/property/page": "app/evictions/new/property/page.js",
+  "/evictions/new/reason/page": "app/evictions/new/reason/page.js",
+  "/evictions/new/review/page": "app/evictions/new/review/page.js",
+  "/evictions/new/tenant/page": "app/evictions/new/tenant/page.js",
+  "/evictions/page": "app/evictions/page.js",
+  "/page": "app/page.js"
+}

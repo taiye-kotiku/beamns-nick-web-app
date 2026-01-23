@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 14, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/User/Documents/Beamns%20Nick/evict-my-tenant-alabama/app/dashboard/page.tsx"],"sourcesContent":["import Link from \"next/link\";\r\n\r\nexport default function DashboardPage() {\r\n  return (\r\n    <main className=\"max-w-5xl mx-auto p-6\">\r\n      <h1 className=\"text-2xl font-bold mb-4\">Eviction Dashboard</h1>\r\n\r\n      <div className=\"bg-white rounded-lg shadow p-6\">\r\n        <p className=\"mb-4 text-gray-700\">\r\n          Start a new eviction filing or continue an existing case.\r\n        </p>\r\n\r\n        <Link\r\n          href=\"/evictions/new\"\r\n          className=\"inline-block bg-black text-white px-4 py-2 rounded\"\r\n        >\r\n          Start New Eviction\r\n        </Link>\r\n      </div>\r\n    </main>\r\n  );\r\n}\r\n"],"names":[],"mappings":";;;;;AAAA;;;AAEe,SAAS;IACtB,qBACE,+SAAC;QAAK,WAAU;;0BACd,+SAAC;gBAAG,WAAU;0BAA0B;;;;;;0BAExC,+SAAC;gBAAI,WAAU;;kCACb,+SAAC;wBAAE,WAAU;kCAAqB;;;;;;kCAIlC,+SAAC,2PAAI;wBACH,MAAK;wBACL,WAAU;kCACX;;;;;;;;;;;;;;;;;;AAMT"}}]
+}
